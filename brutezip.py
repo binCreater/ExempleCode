@@ -12,7 +12,9 @@ def Bruteforce_zip(archive,wordlist):
      
     line ='-'*25
     try:
+        #проверка является ли агрив Zip-врхивом!
         if is_zipfile(archive) ==False:print(f"\n\t[!]{Fore.RED}{archive} Неявляется {Fore.GREEN} ZIP-архивом!");return False
+        #Проверка что файл с паролями не пуст!
         if len(list(open(wordlist,'rb'))) ==0:print(f"\n\t[!]Файл{Fore.RED}{wordlist}{Fore.YELLOW} Пуст!");return False
 
         def generator(passwords):
