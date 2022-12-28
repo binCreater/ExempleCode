@@ -58,9 +58,9 @@ def MorzeCode(message:str,lang ='ru',mode:bool =True,final=""):
         return final,lang
 
     except Exception as e:print(e)   
-
+#=========================примеры
 rus_str ='Ну,начнём! Дойдя до конца нашей истории.Хорошо?'
 eng_str ='Yes, Dr. Sumpler! She had come to enjoy the acrid half hour.OK?'
-msg="-.-- . ... .-.-.- ....... -.. .-. ...... ....... ... ..- -- .--. .-.. . .-. --..-- ....... ... .... . ....... .... .- -.. ....... -.-. --- -- . ....... - --- ....... . -. .--- --- -.-- ....... - .... . ....... .- -.-. .-. .. -.. ....... .... .- .-.. ..-. ....... .... --- ..- .-. ...... --- -.- ..--.. "
+msg=""
 
-MorzeCode(msg,lang="eng",mode =0) 
+MorzeCode(rus_str) 
